@@ -1,0 +1,176 @@
+body{
+    background-color: hsl(225, 100%, 94%) ;
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain; 
+    font-family: 'Red Hat Display', sans-serif;
+}
+.center{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 550px;
+    min-width: 330px;
+    width: 350px;
+    border-radius: 15px;
+}
+.illustartion{
+    width: 100%;
+}
+
+.illustartion img{
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.Summary{
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+.description{
+    color:  hsl(224, 23%, 55%);
+    font-size: 0.9rem;
+} 
+.plan-name{
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+}  
+.price{
+    color:  hsl(224, 23%, 55%);
+}
+.change-plan button{
+    border: none;
+    background-color: hsl(225, 100%, 98%) ;
+    text-decoration: underline;
+    color: hsl(245, 75%, 52%);
+    font-weight: 700;
+    transition: 0.15s;
+}
+
+.change-plan:hover button{
+    cursor: pointer;
+    text-decoration: none;
+    opacity: 0.8;
+}
+.order{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    height: 40%;
+    width: 85%;
+}
+.description{
+    margin-top: 10px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.plan-card{
+    background-color: hsl(225, 100%, 98%);
+    display: flex;
+    height: 30%;
+    width: 100%;
+    border-radius: 7px;
+    margin-bottom: 15px;
+}
+.plan-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 20%;
+}
+.plan-image img{
+    height: 60%;
+}
+.plan-amount{
+    margin-left: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+}
+.price{
+    margin-top: 5px;
+}
+.change-plan{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+}
+.payment-cancel{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    height: 100px;
+}
+.payment{
+    width: 100%;
+    height: 40px;
+    border-radius: 9px;
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    border: none;
+    font-weight: 700;
+    transition: 0.15s;
+}
+.cancel{
+    width: 40%;
+    justify-content: center;
+    margin-bottom: 10px;
+    border: none;
+    background-color: white;
+    border-radius: 8px;
+    color: hsl(224, 23%, 55%);
+    font-weight: 700;
+    transition: 0.15s;
+
+}
+.payment:hover{
+    opacity: 0.8;
+}
+.cancel:hover{
+    color: black;
+}
+
+.payment-cancel:hover button{
+    cursor: pointer;
+}
+
+@media (max-width: 370px) {
+    body{
+        background-image: url(images/pattern-background-mobile.svg);
+    }
+    .card{
+        min-width: 330px;
+        width: 330px;
+    }
+    .order{
+       width: 90%;
+    }
+    .payment-cancel{
+        width: 90%;
+    }
+    .payment{
+        font-size: 0.95rem;
+        height: 45px;
+    }
+    .cancel{
+        font-size: 0.95rem;
+    }
+}
